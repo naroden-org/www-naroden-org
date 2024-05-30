@@ -1,11 +1,11 @@
 {
-  "homepage": "https://MartinPenkov.github.io/www-naroden-org",
+  "homepage": "https://MartinPenkov.github.io/www-naroden-org/index",
   "name": "simple-next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d app",
+    "deploy": "gh-pages -b main -d app",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
