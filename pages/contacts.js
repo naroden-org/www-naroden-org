@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Input from "../components/ui/Input";
 import Button from "../components/ui/Button";
 import React, { useState } from "react"

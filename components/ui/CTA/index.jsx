@@ -13,16 +13,17 @@ const CTA = () => {
                     </div>
                     <div className="max-w-xl mt-6 md:mt-0 lg:max-w-2xl">
                         <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                            Create Successful Business Models with Our IT Solutions
+                            Хора от Народа
                         </h2>
                         <p className="mt-3 text-gray-600">
-                            Blinder, a software development company, helps to digitize businesses by focusing on client’s business challenges, needs. We value close transparent cooperation and encourage our clients to participate actively in the project development life cycle.
+                            Хора от Народа е патриотична организация, целяща да подкрепя, обединява и вдъхновява българите в цял свят. Чрез примера си ние искаме да покажем, че България може и ще има светло бъдеще, само когато всички застанем рамо до рамо и изградим родината, за която милеем и бленуваме!
                         </p>
                         <NavLink
-                            href="/get-started"
+                            href="https://www.horaotnaroda.bg"
+                            target="_blank"
                             className="inline-block mt-4 font-medium text-sm text-white bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800"
                         >
-                            Get started
+                            Научи повече...
                         </NavLink>
                     </div>
                 </div>
