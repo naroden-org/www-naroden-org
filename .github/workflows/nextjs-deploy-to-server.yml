@@ -7,7 +7,7 @@ name: Deploy Next.js site to Server
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["ci"]
+    branches: ["ci", "main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -81,28 +81,7 @@ jobs:
         with:
           path: ${{ github.workspace }}
           key: cache-${{ github.sha }}
-      # - name: Upload artifact
-      #   uses: actions/upload-pages-artifact@v3
-      #   with:
-      #     path: ./out
-  # ssh:
-  #   runs-on: ubuntu-latest
-  #   # needs: build
-  #   steps:
-  #   # - name: Details
-  #   #   run: |
-  #   #     pwd
-  #   - name: Add to known hosts if it does not exist
-  #     run: |
-  #       mkdir -p /home/runner/work/_temp/.ssh
-  #       if [ ! -f "/home/runner/work/_temp/.ssh/known_hosts" ] || ! ssh-keygen -F "${{ secrets.REMOTE_HOST }}" -f "/home/runner/work/_temp/.ssh/known_hosts" >/dev/null; then
-  #         ssh-keyscan -H "${{ secrets.REMOTE_HOST }}" >>"/home/runner/work/_temp/.ssh/known_hosts"
-  #       fi
-  #       if [ ! -f "/home/runner/work/_temp/.ssh/key" ]; then
-  #         echo "${{ secrets.SSH_PRIVATE_KEY }}" >/home/runner/work/_temp/.ssh/key && chmod 600 /home/runner/work/_temp/.ssh/key
-  #       fi
-  #   - name: Test SSH connection
-  #     run: ssh -vvv ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} -i "/home/runner/work/_temp/.ssh/key" -o UserKnownHostsFile="/home/runner/work/_temp/.ssh/known_hosts" -T "echo 1"
+
   # Deployment job
   deploy:
     runs-on: ubuntu-latest
@@ -119,7 +98,7 @@ jobs:
           whoami
           pwd
           ls -ltah
-          ls -ltah out
+          ls -ltah output
       - name: Check cache hit
         if: steps.cache.outputs.cache-hit != 'true'
         run: exit 1
@@ -131,41 +110,4 @@ jobs:
       - name: Adding Known Hosts
         run: ssh-keyscan -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
       - name: Deploy with rsync
-        run: "rsync -v -e 'ssh -p 22 -v' --executability --prune-empty-dirs --recursive --links --owner --group --devices --specials --compress --verbose --checksum --delete-after --exclude '.git/' --exclude '.vscode/' --exclude '.github/' --exclude '.idea/' --include='*' --delete-excluded --out-format='Action: %o -> %n - Last Modified: %M' --omit-dir-times --stats ./out/ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/var/www/naroden.org/"
-    # - name: Add to known hosts if it does not exist
-    #   run: |
-    #     mkdir -p /home/runner/work/_temp/.ssh
-    #     if [ ! -f "/home/runner/work/_temp/.ssh/known_hosts" ] || ! ssh-keygen -F "${{ secrets.REMOTE_HOST }}" -f "/home/runner/work/_temp/.ssh/known_hosts" >/dev/null; then
-    #       ssh-keyscan -H "${{ secrets.REMOTE_HOST }}" >>"/home/runner/work/_temp/.ssh/known_hosts"
-    #     fi
-    # - name: Deploy to Server
-    #   uses: easingthemes/ssh-deploy@v5.0.3
-    #   with:
-    #       SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-    #       # SSH_CMD_ARGS: -o UserKnownHostsFile=/home/runner/work/_temp/.ssh/known_hosts, -o StrictHostKeyChecking=no
-    #       ARGS: "--dry-run --executability --prune-empty-dirs --recursive --links --owner --group --devices --specials --compress --verbose --checksum --delete-after --delete-excluded -e 'ssh -p 22 -vvv' --out-format='Action: %o -> %n - Last Modified: %M' --omit-dir-times --stats"
-    #       SOURCE: "./"
-    #       REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-    #       REMOTE_USER: ${{ secrets.REMOTE_USER }}
-    #       TARGET: "/var/www/naroden.org"
-    #       EXCLUDE: "/.github/, /.idea/, /.git/"
-    #       SCRIPT_BEFORE: |
-    #         hostnamectl
-    #         ssh -V
-    #         whoami
-    #         ls -ltah
-    #       SCRIPT_AFTER: |
-    #         whoami
-    #         ls -al
-    #         echo $RSYNC_STDOUT
-    # - name: Deploy to Server
-    #   uses: burnett01/rsync-deployments@7.0.1
-    #   with:
-    #       remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
-    #       # SSH_CMD_ARGS: -o UserKnownHostsFile=/home/runner/work/_temp/.ssh/known_hosts, -o StrictHostKeyChecking=no
-    #       switches: "-v --dry-run --executability --prune-empty-dirs --recursive --links --owner --group --devices --specials --compress --verbose --checksum --delete-after --exclude '.git/' --exclude '.vscode/' --exclude '.github/' --exclude '.idea/' --include='*' --delete-excluded --out-format='Action: %o -> %n - Last Modified: %M' --omit-dir-times --stats"
-    #       path: "./"
-    #       remote_host: ${{ secrets.REMOTE_HOST }}
-    #       remote_user: ${{ secrets.REMOTE_USER }}
-    #       remote_path: "/var/www/naroden.org"
-    #       # rsh: -p 22
+        run: "rsync -v -e 'ssh -p 22 -v' --executability --prune-empty-dirs --recursive --links --owner --group --devices --specials --compress --verbose --checksum --delete-after --exclude '.git/' --exclude '.vscode/' --exclude '.github/' --exclude '.idea/' --include='*' --delete-excluded --out-format='Action: %o -> %n - Last Modified: %M' --omit-dir-times --stats ./output/ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/var/www/naroden.org/"
