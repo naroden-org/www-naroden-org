@@ -2,12 +2,14 @@ import './assets/styles/theme.css'
 import './assets/styles/fonts.css'
 import './assets/styles/landing.css'
 
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
 export default function RootLayout({ children }) {
   return (
       <html lang="en">
       <head>
         <title>Nova - Bootstrap 5 Landing Page Template For Mobile Apps</title>
-	    <script defer src="assets/fontawesome/js/all.min.js"></script>
       </head>
       <body>
         {children}

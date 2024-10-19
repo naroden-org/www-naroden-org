@@ -2,10 +2,17 @@
 
 import Flickity from 'react-flickity-component'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChartBar, faStar, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+
 export default function Home() {
 
   return (
     <div>
+
+    	<div className="demo-banner py-3 text-white text-center fw-bold theme-bg-secondary text-white">Love this template? Need more page designs? <a className="btn font-weight-bold ms-2 theme-btn-on-bg mt-2 mt-md-0" href="https://themes.3rdwavemedia.com/bootstrap-templates/mobile/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank"><FontAwesomeIcon icon={faExternalLinkAlt} className="fas me-2" />Check out <span className="text-uppercase">Nova Pro</span></a>
+    	</div>
+
     <section className="hero-section">
 	    <div className="container">
 		    <div className="row figure-holder">
@@ -111,7 +118,7 @@ export default function Home() {
 				    <div className="card rounded border-0 shadow-lg  mb-5">
 					    <div className="card-body p-4">
 					        <div>
-					            <i className="far fa-chart-bar me-2 me-lg-3 text-primary fa-lg fa-fw"></i>
+					            <FontAwesomeIcon icon={faChartBar} className="far me-2 me-lg-3 text-primary fa-lg fa-fw" />
 							    <h5 className="card-title">Feature Lorem Ipsum</h5>
 							</div>
 							<p className="card-text">List one of your product's main features here. The screenshots used in this template are taken from Bootstrap admin template Appify. </p>
@@ -122,7 +129,7 @@ export default function Home() {
 				    <div className="card rounded border-0 shadow-lg mb-5">
 					    <div className="card-body p-4">
 					        <div>
-					            <i className="fas fa-laptop-code me-2 me-lg-3 text-primary fa-lg fa-fw"></i>
+					            <FontAwesomeIcon icon={faChartBar} className="far me-2 me-lg-3 text-primary fa-lg fa-fw" />
 							    <h5 className="card-title">Feature Consectetuer</h5>
 							</div>
 							<p className="card-text">List one of your product's main features here. The screenshots used in this template are taken from Bootstrap admin template Appify.</p>
@@ -132,7 +139,7 @@ export default function Home() {
 				    <div className="card rounded border-0 shadow-lg">
 					    <div className="card-body p-4">
 					        <div>
-					            <i className="far fa-calendar-alt me-2 me-lg-3 text-primary fa-lg fa-fw"></i>
+					            <FontAwesomeIcon icon={faChartBar} className="far me-2 me-lg-3 text-primary fa-lg fa-fw" />
 							    <h5 className="card-title">Feature Lorem Ipsum</h5>
 							</div>
 							<p className="card-text">List one of your product's main features here. The screenshots used in this template are taken from Bootstrap admin template Appify.</p>
@@ -150,7 +157,7 @@ export default function Home() {
 				    <div className="card rounded border-0 shadow-lg  mb-5">
 					    <div className="card-body p-4">
 					        <div>
-                              <i className="fas fa-microphone-alt me-2 me-lg-3 text-primary fa-lg fa-fw"></i>
+                              <FontAwesomeIcon icon={faChartBar} className="far me-2 me-lg-3 text-primary fa-lg fa-fw" />
 							  <h5 className="card-title">Feature Commodo</h5>
 							</div>
 							<p className="card-text">List one of your product's main features here. The screenshots used in this template are taken from Bootstrap admin template Appify. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
@@ -161,7 +168,7 @@ export default function Home() {
 				    <div className="card rounded border-0 shadow-lg">
 					    <div className="card-body p-4">
 					        <div>
-					            <i className="far fa-comments me-2 me-lg-3 text-primary fa-lg fa-fw"></i>
+					            <FontAwesomeIcon icon={faChartBar} className="far me-2 me-lg-3 text-primary fa-lg fa-fw" />
 							    <h5 className="card-title">Feature  Ligula Eget</h5>
 							</div>
 							<p className="card-text">List one of your product's main features here. Lorem ipsum dolor sit amet. The screenshots used in this template are taken from Bootstrap admin template Appify.</p>
@@ -192,9 +199,8 @@ export default function Home() {
 	    <div className="py-lg-5">
 		    <h3 className="mb-5 text-center">Loved by thousands of app developers like you</h3>
 
-	        <div id="testimonial-carousel" className="testimonial-carousel">
 	            <Flickity
-                  className={'gallery-cell'}
+                  className={'testimonial-carousel'}
                   elementType={'div'}
                   options={{contain: true,
                            	wrapAround: true,
@@ -209,7 +215,7 @@ export default function Home() {
 			    <div className="carousel-cell">
 				    <div className="item-inner shadow rounded">
 					    <h5 className="mb-2">Amazing App!</h5>
-					    <div className="ratings text-primary mb-3"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
+					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /></div>
 					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 					    </div>
 					    <div className="source row">
@@ -227,7 +233,7 @@ export default function Home() {
 			    <div className="carousel-cell">
 				    <div className="item-inner shadow rounded">
 					    <h5 className="mb-2">Marvellous!</h5>
-					    <div className="ratings text-primary mb-3"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star-half"></i></div>
+					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><i className="fas fa-star-half"></i></div>
 					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 					    </div>
 					    <div className="source row">
@@ -245,7 +251,7 @@ export default function Home() {
 			    <div className="carousel-cell">
 				    <div className="item-inner shadow rounded">
 					    <h5 className="mb-2">Actually Impressive!</h5>
-					    <div className="ratings text-primary mb-3"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
+					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /></div>
 					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 					    </div>
 					    <div className="source row">
@@ -263,7 +269,7 @@ export default function Home() {
 			    <div className="carousel-cell">
 				    <div className="item-inner shadow rounded">
 					    <h5 className="mb-2">Total Game Changer!</h5>
-					    <div className="ratings text-primary mb-3"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
+					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /></div>
 					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 					    </div>
 					    <div className="source row">
@@ -281,7 +287,7 @@ export default function Home() {
 			    <div className="carousel-cell">
 				    <div className="item-inner shadow rounded">
 					    <h5 className="mb-2">Just Perfect!</h5>
-					    <div className="ratings text-primary mb-3"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
+					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /></div>
 					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 					    </div>
 					    <div className="source row">
@@ -299,7 +305,7 @@ export default function Home() {
 			    <div className="carousel-cell">
 				    <div className="item-inner shadow rounded">
 					    <h5 className="mb-2">Great App!</h5>
-					    <div className="ratings text-primary mb-3"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
+					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /></div>
 					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 					    </div>
 					    <div className="source row">
@@ -317,7 +323,7 @@ export default function Home() {
 			    <div className="carousel-cell">
 				    <div className="item-inner shadow rounded">
 					    <h5 className="mb-2">Exceptional!</h5>
-					    <div className="ratings text-primary mb-3"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
+					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /></div>
 					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 					    </div>
 					    <div className="source row">
@@ -333,8 +339,6 @@ export default function Home() {
 			    </div>
 
                 </Flickity>
-
-		    </div>
 
 		    <div className="pt-5 text-center">
 			    <a className="btn btn-primary theme-btn font-weight-bold" href="#">Try Nova Now</a>
@@ -377,12 +381,6 @@ export default function Home() {
 			    </div>
 			    <div className="footer-col col-6 col-lg-3">
 				    <h4 className="col-heading">Stay Connected</h4>
-				    <ul className="social-list list-unstyled mb-0">
-					    <li className="list-inline-item"><a href="#"><i className="fa-brands fa-instagram fa-fw"></i></a></li>
-			            <li className="list-inline-item"><a href="#"><i className="fa-brands fa-x-twitter fa-fw"></i></a></li>
-		                <li className="list-inline-item"><a href="#"><i className="fa-brands fa-facebook-f fa-fw"></i></a></li>
-		                <li className="list-inline-item"><a href="#"><i className="fa-brands fa-youtube fa-fw"></i></a></li>
-		            </ul>
 
 		            <div className="mb-2">
 			            Company Name<br/>
@@ -410,7 +408,7 @@ export default function Home() {
 		    </div>
 	    </div>
 	    <div className="footer-bottom text-center pb-5">
-            <small className="copyright">Designed with <span className="sr-only">love</span><i className="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+            <small className="copyright">Designed <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
 	    </div>
 
     </footer>
