@@ -1,5 +1,7 @@
 'use client'
 
+import Flickity from 'react-flickity-component'
+
 export default function Home() {
 
   return (
@@ -191,6 +193,19 @@ export default function Home() {
 		    <h3 className="mb-5 text-center">Loved by thousands of app developers like you</h3>
 
 	        <div id="testimonial-carousel" className="testimonial-carousel">
+	            <Flickity
+                  className={'gallery-cell'}
+                  elementType={'div'}
+                  options={{contain: true,
+                           	wrapAround: true,
+                           	autoPlay: true,
+                           	percentPosition: false,
+                           	}}
+                  disableImagesLoaded={false}
+                  reloadOnUpdate // default false
+                  static // default false
+                >
+
 			    <div className="carousel-cell">
 				    <div className="item-inner shadow rounded">
 					    <h5 className="mb-2">Amazing App!</h5>
@@ -316,6 +331,9 @@ export default function Home() {
 					    </div>
 				    </div>
 			    </div>
+
+                </Flickity>
+
 		    </div>
 
 		    <div className="pt-5 text-center">
