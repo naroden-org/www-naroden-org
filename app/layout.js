@@ -1,9 +1,4 @@
-import './assets/styles/theme.css'
-import './assets/styles/fonts.css'
-import './assets/styles/landing.css'
-
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
+import './assets/styles/document.css'
 
 export default function RootLayout({ children }) {
   return (
@@ -13,9 +8,6 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
-
-       <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-       <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
       </body>
       </html>
   );

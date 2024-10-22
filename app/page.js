@@ -1,9 +1,17 @@
 'use client'
 
+import './assets/styles/theme.css'
+import './assets/styles/fonts.css'
+import './assets/styles/landing.css'
+
 import Flickity from 'react-flickity-component'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import { faChartBar, faStar, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+
+
 
 export default function Home() {
 
@@ -413,6 +421,8 @@ export default function Home() {
 
     </footer>
 
+       <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+       <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     </div>
   );
 }
