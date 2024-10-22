@@ -414,7 +414,7 @@ export default function Home() {
 		    </div>
 	    </div>
 	    <div className="footer-bottom text-center pb-5">
-            <small className="copyright">Designed <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
+            <small className="copyright">Designed by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
 	    </div>
 
     </footer>
