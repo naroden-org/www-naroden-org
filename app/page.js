@@ -1,5 +1,6 @@
 'use client'
 
+import  "bootstrap/dist/css/bootstrap.min.css"
 import './assets/styles/theme.css'
 import './assets/styles/fonts.css'
 import './assets/styles/landing.css'
@@ -11,15 +12,12 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { faChartBar, faStar, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
-
-
 export default function Home() {
 
   return (
     <div>
-
     	<div className="demo-banner py-3 text-white text-center fw-bold theme-bg-secondary text-white">Love this template? Need more page designs? <a className="btn font-weight-bold ms-2 theme-btn-on-bg mt-2 mt-md-0" href="https://themes.3rdwavemedia.com/bootstrap-templates/mobile/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank"><FontAwesomeIcon icon={faExternalLinkAlt} className="fas me-2" />Check out <span className="text-uppercase">Nova Pro</span></a>
-    	</div>
+    </div>
 
     <section className="hero-section">
 	    <div className="container">
