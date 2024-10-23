@@ -1,9 +1,9 @@
 'use client'
 
-
+import { EmbedPDF } from "@simplepdf/react-embed-pdf";
 
 export default function PrivacyPolicy() {
   return (
-    <iframe src="https://docs.google.com/viewer?url=https://www.naroden.org/documents/privacy_policy.pdf&embedded=true" className="document"></iframe>
+    <EmbedPDF mode="inline" className="document" documentURL="/documents/privacy_policy.pdf" />
   )
 }

@@ -1,7 +1,9 @@
 'use client'
 
+import { EmbedPDF } from "@simplepdf/react-embed-pdf";
+
 export default function GeneralTerms() {
   return (
-    <iframe src="https://docs.google.com/viewer?url=https://www.naroden.org/documents/general_terms.pdf&embedded=true" className="document"></iframe>
-  )
+    <EmbedPDF mode="inline" className="document" documentURL="/documents/general_terms.pdf" />
+  );
 }
