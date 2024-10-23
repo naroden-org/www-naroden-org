@@ -4,6 +4,6 @@
 
 export default function PrivacyPolicy() {
   return (
-    <iframe src='/documents/privacy_policy.pdf' className="document" />
+    <object data="/documents/privacy_policy.pdf" className="document" />
   )
 }

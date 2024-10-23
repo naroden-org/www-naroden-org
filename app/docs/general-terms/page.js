@@ -2,6 +2,6 @@
 
 export default function GeneralTerms() {
   return (
-    <iframe src='/documents/general_terms.pdf' className="document" />
+    <object data="/documents/general_terms.pdf" className="document" />
   )
 }
