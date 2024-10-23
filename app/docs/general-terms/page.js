@@ -2,6 +2,6 @@
 
 export default function GeneralTerms() {
   return (
-    <object data="/documents/general_terms.pdf" className="document" />
+    <iframe src="https://docs.google.com/viewer?url=https://www.naroden.org/documents/general_terms.pdf&embedded=true" className="document"></iframe>
   )
 }

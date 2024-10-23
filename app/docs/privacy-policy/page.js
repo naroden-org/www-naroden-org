@@ -4,10 +4,6 @@
 
 export default function PrivacyPolicy() {
   return (
-    <object data='/documents/privacy_policy.pdf' className="document">
-        <p>Oops! Your browser doesn't support PDFs!</p>
-        <p><a href="/documents/privacy_policy.pdf">Download Instead</a></p>
-    </object>
-
+    <iframe src="https://docs.google.com/viewer?url=https://www.naroden.org/documents/privacy_policy.pdf&embedded=true" className="document"></iframe>
   )
 }
