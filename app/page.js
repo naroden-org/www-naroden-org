@@ -16,20 +16,20 @@ export default function Home() {
 
   return (
     <div>
-    	<div className="demo-banner py-3 text-white text-center fw-bold theme-bg-secondary text-white">Love this template? Need more page designs? <a className="btn font-weight-bold ms-2 theme-btn-on-bg mt-2 mt-md-0" href="https://themes.3rdwavemedia.com/bootstrap-templates/mobile/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank"><FontAwesomeIcon icon={faExternalLinkAlt} className="fas me-2" />Check out <span className="text-uppercase">Nova Pro</span></a>
+    	<div className="demo-banner py-3 text-white text-center fw-bold theme-bg-secondary text-white">Искате вашите новини да стигнат до повече хора? <a className="btn font-weight-bold ms-2 theme-btn-on-bg mt-2 mt-md-0" href="/contacts"><FontAwesomeIcon icon={faExternalLinkAlt} className="fas me-2" />Свържете се с нас!</a>
     </div>
 
     <section className="hero-section">
 	    <div className="container">
 		    <div className="row figure-holder">
 			    <div className="col-12 col-md-6 pt-3 pt-md-4">
-				    <h2 className="site-headline font-weight-bold mt-lg-5 pt-lg-5">The best way to promote your app and convert users.</h2>
-				    <div className="site-tagline mb-3">High converting Bootstrap landing page template made for app developers. Built with Bootstrap 5 and Sass. Get started now!</div>
+				    <h2 className="site-headline font-weight-bold mt-lg-5 pt-lg-5">Включете се в мрежата на народа!</h2>
+				    <div className="site-tagline mb-3">Споделяне на добрите новини! Осветляване на проблемите на народа! Ела при нас!</div>
 				    <div className="cta-btns">
-					    <div className="mb-4"><a className="btn btn-primary font-weight-bold theme-btn" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/">Try Nova for FREE</a></div>
+					    <div className="mb-4"><a className="btn btn-primary font-weight-bold theme-btn" href="/register">Регистрирай се</a></div>
 					    <ul className="app-stores list-unstyled list-inline mx-auto mx-md-0 d-inline-block">
-						    <li className="list-inline-item me-3"><a href="#"><img className="ios" src="/assets/images/appstore-apple.svg" alt="app-store"/></a></li>
-						    <li className="list-inline-item"><a href="#"><img className="android" src="/assets/images/appstore-android.svg" alt="google play"/></a></li>
+						    <li className="list-inline-item me-3"><a href="/TODO-apple"><img className="ios" src="/assets/images/appstore-apple.svg" alt="app-store"/></a></li>
+						    <li className="list-inline-item"><a href="/TODO-android"><img className="android" src="/assets/images/appstore-android.svg" alt="google play"/></a></li>
 					    </ul>
 				    </div>
 			    </div>
@@ -39,36 +39,36 @@ export default function Home() {
 
     <section className="logos-section theme-bg-primary py-5 text-center">
 	    <div className="container">
-		    <h3 className="mb-5">Trusted by hundreds of software businesses</h3>
+		    <h3 className="mb-5">Медии, които ни се довериха</h3>
 		    <div className="logos-row row mx-auto">
 	            <div className="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
 		            <div className="item-inner">
-		                <img src="/assets/images/logos/logo-1.svg" alt="logo"/>
+		                <img height="76" src="/assets/images/logos/media-1.png" alt="logo"/>
 		            </div>
 	            </div>
 	            <div className="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
 		            <div className="item-inner">
-		                <img src="/assets/images/logos/logo-2.svg" alt="logo"/>
+		                <img height="76" src="/assets/images/logos/media-2.png" alt="logo"/>
 		            </div>
 	            </div>
 	            <div className="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
 		            <div className="item-inner">
-		                <img src="/assets/images/logos/logo-3.svg" alt="logo"/>
+		                <img height="76" src="/assets/images/logos/media-3.png" alt="logo"/>
 		            </div>
 	            </div>
 	            <div className="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
 		            <div className="item-inner">
-		                <img src="/assets/images/logos/logo-4.svg" alt="logo"/>
+		                <img height="76" src="/assets/images/logos/media-4.png" alt="logo"/>
 		            </div>
 	            </div>
 	            <div className="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
 		            <div className="item-inner">
-		                <img src="/assets/images/logos/logo-5.svg" alt="logo"/>
+		                <img height="76" src="/assets/images/logos/media-5.png" alt="logo"/>
 		            </div>
 	            </div>
 	            <div className="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
 		            <div className="item-inner">
-		                <img src="/assets/images/logos/logo-6.svg" alt="logo"/>
+		                <img height="76" src="/assets/images/logos/media-6.png" alt="logo"/>
 		            </div>
 	            </div>
 
@@ -80,32 +80,29 @@ export default function Home() {
     <section className="benefits-section py-5">
 
 	    <div className="container py-lg-5">
-		    <h3 className="mb-5 text-center font-weight-bold">Market your mobile app effectively with Nova</h3>
+		    <h3 className="mb-5 text-center font-weight-bold">Какви са целите на народната мрежа!</h3>
 		    <div className="row">
 		        <div className="item col-12 col-lg-4">
 				    <div className="item-inner text-center p-3 p-lg-5">
 					    <img className="mb-3" src="/assets/images/icon-target.svg" alt="" />
-					    <h5>Focused on UX</h5>
-					    <div>Use this area to list your app's key benefits. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </div>
+					    <h5>Създаване на народна мрежа</h5>
+					    <div>Първата по рода си народна мрежа. Тук обикновеният човек може да се информира за случващото се в страната спрямо своите интереси! </div>
 				    </div>
 			    </div>
 			    <div className="item col-12 col-lg-4">
 				    <div className="item-inner text-center p-3 p-lg-5">
 					    <img className="mb-3" src="/assets/images/icon-rocket.svg" alt="" />
-					    <h5>Convert Users</h5>
-					    <div>Use this area to list your app's key benefits. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </div>
+					    <h5>Възход на България</h5>
+					    <div>Просперитет в България може да се постигне само, когато народът е добре информиран за реалността в страната и е непримирим в борбата с корупцията! </div>
 				    </div>
 			    </div>
 			    <div className="item col-12 col-lg-4">
 				    <div className="item-inner text-center p-3 p-lg-5">
 					    <img className="mb-3" src="/assets/images/icon-cogs.svg" alt="" />
-					    <h5>Easy Customisations</h5>
-					    <div>Use this area to list your app's key benefits. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </div>
+					    <h5>Информиране по интереси</h5>
+					    <div>Всеки човек ще може да настрои приложението да го информира спрямо неговите интереси! Абонирайте се за вашите любими теми! </div>
 				    </div>
 			    </div>
-		    </div>
-		    <div className="pt-3 text-center">
-			    <a className="btn btn-primary theme-btn theme-btn-ghost font-weight-bold" href="#">Learn More</a>
 		    </div>
 	    </div>
 
@@ -113,7 +110,7 @@ export default function Home() {
 
     <section className="features-section py-5">
 	    <div className="container py-lg-5 position-relative">
-		    <h3 className="mb-3 text-center font-weight-bold section-heading">Feature Highlights</h3>
+		    <h3 className="mb-3 text-center font-weight-bold section-heading">Основни фукционалности</h3>
 		    <div className="row pt-5 mb-5">
 
 			    <div className="col-12 col-md-6 col-xl-5 offset-xl-1 d-none d-md-block">
@@ -125,10 +122,10 @@ export default function Home() {
 					    <div className="card-body p-4">
 					        <div>
 					            <FontAwesomeIcon icon={faChartBar} className="far me-2 me-lg-3 text-primary fa-lg fa-fw" />
-							    <h5 className="card-title">Feature Lorem Ipsum</h5>
+							    <h5 className="card-title">Новини</h5>
 							</div>
-							<p className="card-text">List one of your product's main features here. The screenshots used in this template are taken from Bootstrap admin template Appify. </p>
-							<a className="more-link" href="#" >Learn more <span className="more-arrow">&rarr;</span></a>
+							<p className="card-text">Приложението комбинира различни източници на новини. Нашата основна цел е да споделим добрите новини! </p>
+							<a className="more-link" href="#" >Научи повече <span className="more-arrow">&rarr;</span></a>
 						</div>
 				    </div>
 
@@ -136,20 +133,20 @@ export default function Home() {
 					    <div className="card-body p-4">
 					        <div>
 					            <FontAwesomeIcon icon={faChartBar} className="far me-2 me-lg-3 text-primary fa-lg fa-fw" />
-							    <h5 className="card-title">Feature Consectetuer</h5>
+							    <h5 className="card-title">Интереси</h5>
 							</div>
-							<p className="card-text">List one of your product's main features here. The screenshots used in this template are taken from Bootstrap admin template Appify.</p>
-							<a className="more-link" href="#" >Learn more <span className="more-arrow">&rarr;</span></a>
+							<p className="card-text">Всеки потребител ще може да дефинира своите интереси. По този начин приложението ще подбере подходящите новини за всеки!</p>
+							<a className="more-link" href="#" >Научи повече <span className="more-arrow">&rarr;</span></a>
 						</div>
 				    </div>
 				    <div className="card rounded border-0 shadow-lg">
 					    <div className="card-body p-4">
 					        <div>
 					            <FontAwesomeIcon icon={faChartBar} className="far me-2 me-lg-3 text-primary fa-lg fa-fw" />
-							    <h5 className="card-title">Feature Lorem Ipsum</h5>
+							    <h5 className="card-title">Анкети</h5>
 							</div>
-							<p className="card-text">List one of your product's main features here. The screenshots used in this template are taken from Bootstrap admin template Appify.</p>
-							<a className="more-link" href="#" >Learn more <span className="more-arrow">&rarr;</span></a>
+							<p className="card-text">Създаването на гражданско общество изисква и допитването до него! Чрез анкетите гласът на народа ще бъде чут!</p>
+							<a className="more-link" href="#" >Научи повече <span className="more-arrow">&rarr;</span></a>
 						</div>
 				    </div>
 			    </div>
@@ -164,10 +161,10 @@ export default function Home() {
 					    <div className="card-body p-4">
 					        <div>
                               <FontAwesomeIcon icon={faChartBar} className="far me-2 me-lg-3 text-primary fa-lg fa-fw" />
-							  <h5 className="card-title">Feature Commodo</h5>
+							  <h5 className="card-title">Статистика</h5>
 							</div>
-							<p className="card-text">List one of your product's main features here. The screenshots used in this template are taken from Bootstrap admin template Appify. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
-							<a className="more-link" href="#" >Learn more <span className="more-arrow">&rarr;</span></a>
+							<p className="card-text">Чрез създаването на различни статистики ще покажем на хората, че не са сами! </p>
+							<a className="more-link" href="#" >Научи повече <span className="more-arrow">&rarr;</span></a>
 						</div>
 				    </div>
 
@@ -175,238 +172,24 @@ export default function Home() {
 					    <div className="card-body p-4">
 					        <div>
 					            <FontAwesomeIcon icon={faChartBar} className="far me-2 me-lg-3 text-primary fa-lg fa-fw" />
-							    <h5 className="card-title">Feature  Ligula Eget</h5>
+							    <h5 className="card-title">Очаквайте още</h5>
 							</div>
-							<p className="card-text">List one of your product's main features here. Lorem ipsum dolor sit amet. The screenshots used in this template are taken from Bootstrap admin template Appify.</p>
-							<a className="more-link" href="#" >Learn more <span className="more-arrow">&rarr;</span></a>
+							<p className="card-text">Това е първоначална версия на приложението. Очаквайте още много неща!</p>
+							<a className="more-link" href="#" >Научи повече <span className="more-arrow">&rarr;</span></a>
 						</div>
 				    </div>
 			    </div>
 
 		    </div>
-
-		    <div className="pt-5 text-center">
-			    <a className="btn btn-primary theme-btn theme-btn-ghost font-weight-bold" href="#">View all features</a>
-		    </div>
 	    </div>
 
     </section>
 
-    <section className="cta-section py-5 theme-bg-secondary text-center">
-	    <div className="container">
-		    <h3 className="text-white font-weight-bold mb-3">Ready to turn your visitors to app users?</h3>
-		    <div className="text-white mx-auto single-col-max-width section-intro">Try Nova Free Today. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.</div>
-		    <a className="btn theme-btn theme-btn-ghost theme-btn-on-bg mt-4" href="#">Download  Now - It's FREE</a>
-	    </div>
-    </section>
-
-
-    <section id="quote" className="testimonial-section py-5">
-	    <div className="py-lg-5">
-		    <h3 className="mb-5 text-center">Loved by thousands of app developers like you</h3>
-
-	            <Flickity
-                  className={'testimonial-carousel'}
-                  elementType={'div'}
-                  options={{contain: true,
-                           	wrapAround: true,
-                           	autoPlay: true,
-                           	percentPosition: false,
-                           	}}
-                  disableImagesLoaded={false}
-                  reloadOnUpdate // default false
-                  static // default false
-                >
-
-			    <div className="carousel-cell">
-				    <div className="item-inner shadow rounded">
-					    <h5 className="mb-2">Amazing App!</h5>
-					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /></div>
-					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-					    </div>
-					    <div className="source row">
-						    <div className="col-auto">
-						        <img className="source-profile rounded-circle" src="/assets/images/users/user-1.jpg" alt="" />
-					        </div>
-						    <div className="source-info col pt-3">
-							    <div>Tony Carter</div>
-							    <div>London, UK</div>
-						    </div>
-					    </div>
-				    </div>
-			    </div>
-
-			    <div className="carousel-cell">
-				    <div className="item-inner shadow rounded">
-					    <h5 className="mb-2">Marvellous!</h5>
-					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><i className="fas fa-star-half"></i></div>
-					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-					    </div>
-					    <div className="source row">
-						    <div className="col-auto">
-						        <img className="source-profile rounded-circle" src="/assets/images/users/user-2.jpg" alt="" />
-						    </div>
-						    <div className="source-info col pt-3">
-							    <div>Helen Owens</div>
-							    <div>New York, US</div>
-						    </div>
-					    </div>
-				    </div>
-			    </div>
-
-			    <div className="carousel-cell">
-				    <div className="item-inner shadow rounded">
-					    <h5 className="mb-2">Actually Impressive!</h5>
-					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /></div>
-					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-					    </div>
-					    <div className="source row">
-						    <div className="col-auto">
-						        <img className="source-profile rounded-circle" src="/assets/images/users/user-3.jpg" alt="" />
-						    </div>
-						    <div className="source-info col pt-3">
-							    <div>Scott Rivera</div>
-							    <div>Florida, US</div>
-						    </div>
-					    </div>
-				    </div>
-			    </div>
-
-			    <div className="carousel-cell">
-				    <div className="item-inner shadow rounded">
-					    <h5 className="mb-2">Total Game Changer!</h5>
-					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /></div>
-					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-					    </div>
-					    <div className="source row">
-						    <div className="col-auto">
-						        <img className="source-profile rounded-circle" src="/assets/images/users/user-4.jpg" alt="" />
-						    </div>
-						    <div className="source-info col pt-3">
-							    <div>Charles Brewer</div>
-							    <div>San Francisco, US</div>
-						    </div>
-					    </div>
-				    </div>
-			    </div>
-
-			    <div className="carousel-cell">
-				    <div className="item-inner shadow rounded">
-					    <h5 className="mb-2">Just Perfect!</h5>
-					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /></div>
-					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-					    </div>
-					    <div className="source row">
-						    <div className="col-auto">
-						        <img className="source-profile rounded-circle" src="/assets/images/users/user-5.jpg" alt="" />
-						    </div>
-						    <div className="source-info col pt-3">
-							    <div>Deborah Reed</div>
-							    <div>Paris, France</div>
-						    </div>
-					    </div>
-				    </div>
-			    </div>
-
-			    <div className="carousel-cell">
-				    <div className="item-inner shadow rounded">
-					    <h5 className="mb-2">Great App!</h5>
-					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /></div>
-					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-					    </div>
-					    <div className="source row">
-						    <div className="col-auto">
-						        <img className="source-profile rounded-circle" src="/assets/images/users/user-6.jpg" alt="" />
-						    </div>
-						    <div className="source-info col pt-3">
-							    <div>Tony Cheng</div>
-							    <div>San Francisco, US</div>
-						    </div>
-					    </div>
-				    </div>
-			    </div>
-
-			    <div className="carousel-cell">
-				    <div className="item-inner shadow rounded">
-					    <h5 className="mb-2">Exceptional!</h5>
-					    <div className="ratings text-primary mb-3"><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /><FontAwesomeIcon icon={faStar} className="far" /></div>
-					    <div className="mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-					    </div>
-					    <div className="source row">
-						    <div className="col-auto">
-						        <img className="source-profile rounded-circle me-3" src="/assets/images/users/user-7.jpg" alt="" />
-						    </div>
-						    <div className="source-info col pt-3">
-							    <div>Kimberly Wells</div>
-							    <div>London, UK</div>
-						    </div>
-					    </div>
-				    </div>
-			    </div>
-
-                </Flickity>
-
-		    <div className="pt-5 text-center">
-			    <a className="btn btn-primary theme-btn font-weight-bold" href="#">Try Nova Now</a>
-		    </div>
-
-	    </div>
-
-    </section>
-
-
-    <footer className="footer theme-bg-primary">
-	    <div className="container py-5 mb-3">
-		    <div className="row">
-			    <div className="footer-col col-6 col-lg-3">
-				    <h4 className="col-heading">About Nova</h4>
-				    <ul className="list-unstyled">
-					    <li><a className="text-link" href="#">Our Story</a></li>
-					    <li><a className="text-link" href="#">Pricing</a></li>
-					    <li><a className="text-link" href="#">Contact</a></li>
-					    <li><a className="text-link" href="#">Jobs</a></li>
-
-				    </ul>
-			    </div>
-			    <div className="footer-col col-6 col-lg-3">
-				    <h4 className="col-heading">Resources</h4>
-				    <ul className="list-unstyled">
-					    <li><a className="text-link" href="#">FAQs</a></li>
-					    <li><a className="text-link" href="#">Blog</a></li>
-					    <li><a className="text-link" href="#">Support</a></li>
-					    <li><a className="text-link" href="#">Developer APIs</a></li>
-				    </ul>
-			    </div>
-			    <div className="footer-col col-6 col-lg-3">
-				    <h4 className="col-heading">Legal</h4>
-				    <ul className="list-unstyled">
-					    <li><a className="text-link" href="#">Privacy</a></li>
-					    <li><a className="text-link" href="#">Terms of Services</a></li>
-					    <li><a className="text-link" href="#">Security</a></li>
-				    </ul>
-			    </div>
-			    <div className="footer-col col-6 col-lg-3">
-				    <h4 className="col-heading">Stay Connected</h4>
-
-		            <div className="mb-2">
-			            Company Name<br/>
-			            2419 Locust View Drive <br/>
-			            San Francisco, CA, 94143
-		            </div>
-		            <div>
-			            <a className="text-link" href="#">hello@yourcompany.com</a>
-			        </div>
-
-			    </div>
-		    </div>
-	    </div>
-	    <div className="container">
-		    <hr/>
-	    </div>
+     <footer className="footer theme-bg-primary">
 	    <div className="download-area py-4">
 		    <div className="container text-center">
-			    <h3 className="mb-3">Get the app</h3>
-		    <div className="section-intro mb-4 single-col-max-width mx-auto">Download our apps now. lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis. </div>
+			    <h3 className="mb-3">Свали приложението</h3>
+		    <div className="section-intro mb-4 single-col-max-width mx-auto">Включи се в народната мрежа! Първото по рода си приложение в България, което цели да свърже обикновените хора! Заедно сме сила!</div>
 			    <ul className="app-stores list-unstyled list-inline mx-auto  d-inline-block">
 				    <li className="list-inline-item me-3"><a href="#"><img className="ios" src="/assets/images/appstore-apple.svg" alt="app-store" /></a></li>
 				    <li className="list-inline-item"><a href="#"><img className="android" src="/assets/images/appstore-android.svg" alt="google play" /></a></li>

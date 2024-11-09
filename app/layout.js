@@ -2,9 +2,9 @@ import './assets/styles/document.css'
 
 export default function RootLayout({ children }) {
   return (
-      <html lang="en">
+      <html lang="bg">
       <head>
-        <title>Nova - Bootstrap 5 Landing Page Template For Mobile Apps</title>
+        <title>Народен - приложението на народа!</title>
       </head>
       <body>
         {children}
