@@ -114,7 +114,7 @@ export default function Home() {
 		    <div className="row pt-5 mb-5">
 
 			    <div className="col-12 col-md-6 col-xl-5 offset-xl-1 d-none d-md-block">
-				    <img className="product-figure product-figure-1 img-fluid" src="/assets/images/product-figure-1.png" alt="" />
+				    <img className="product-figure product-figure-1 img-fluid" src="/assets/images/screens/screen-3.png" alt="" />
 			    </div>
 
 		        <div className="col-12 col-md-6 col-xl-5 pr-xl-3 pt-md-3">
@@ -154,7 +154,7 @@ export default function Home() {
 
 		    <div className="row">
 			    <div className="col-12 col-md-6 col-xl-5 order-md-2 pr-xl-3 d-none d-md-block">
-				    <img className="product-figure product-figure-2 img-fluid" src="/assets/images/product-figure-2.png" alt="" />
+				    <img className="product-figure product-figure-2 img-fluid" src="/assets/images/screens/screen-3.png" alt="" />
 			    </div>
 			    <div className="col-12 col-md-6 col-xl-5 order-md-1 offset-xl-1 pt-xl-5">
 				    <div className="card rounded border-0 shadow-lg  mb-5">
