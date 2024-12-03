@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div>
-    	<div className="demo-banner py-3 text-white text-center fw-bold theme-bg-secondary text-white">Искате вашите новини да стигнат до повече хора? <a className="btn font-weight-bold ms-2 theme-btn-on-bg mt-2 mt-md-0" href="/contacts"><FontAwesomeIcon icon={faExternalLinkAlt} className="fas me-2" />Свържете се с нас!</a>
+    	<div className="demo-banner py-3 text-white text-center fw-bold theme-bg-secondary text-white">Искате вашите новини да стигнат до повече хора? <a className="btn font-weight-bold ms-2 theme-btn-on-bg mt-2 mt-md-0" href="/support"><FontAwesomeIcon icon={faExternalLinkAlt} className="fas me-2" />Свържете се с нас!</a>
     </div>
 
     <section className="hero-section">
