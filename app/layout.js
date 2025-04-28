@@ -1,4 +1,5 @@
 import './assets/styles/document.css'
+import { Suspense } from 'react'
 
 export default function RootLayout({ children }) {
   return (
@@ -7,7 +8,7 @@ export default function RootLayout({ children }) {
         <title>Народен - приложението на народа!</title>
       </head>
       <body>
-        {children}
+        <Suspense>{children}</Suspense>
       </body>
       </html>
   );

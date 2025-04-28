@@ -41,12 +41,6 @@ export default function activateAccount() {
     console.log(result);
   };
 
-
-
-
-
-
-
   return (
     <section className="vh-100">
       <div className="container h-100">
