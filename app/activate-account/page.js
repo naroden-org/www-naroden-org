@@ -21,8 +21,14 @@ export default function activateAccount() {
   const [inputCode, setInputCodeValue] = useState(code);
   const [inputEmail, setInputEmailValue] = useState(email);
 
+  const [successFormMessage, setSuccessFormMessageValue] = useState('');
+  const [errorFormMessage, setErrorFormMessageValue] = useState('');
+
   const onSubmit = async (event) => {
     event.preventDefault();
+    if (event.nativeEvent.submitter.name !== "activate-account") {
+      return;
+    }
 
     const data = {
       code: inputCode,
@@ -38,8 +44,52 @@ export default function activateAccount() {
     });
 
     const result = await response.json();
-    console.log(result);
+    if (response.ok) {
+      setSuccessFormMessageValue("Успешно активирахте своя акаунт!");
+      setErrorFormMessageValue("");
+    } else {
+      setSuccessFormMessageValue("");
+      if (result.code === "4003") {
+        setErrorFormMessageValue("Грешка при активацията. Не съществува акаунт с тази поща.");
+      } else if (result.code === "4005") {
+        setErrorFormMessageValue("Грешка при активацията. Въведеният код е грешен.");
+      } else if (result.code === "4006") {
+        setErrorFormMessageValue("Грешка при активацията. Въведеният код е изтекъл.");
+      } else if (result.code === "4007") {
+        setErrorFormMessageValue("Грешка при активацията. Няма издаден код за посочената поща.");
+      } else {
+        setErrorFormMessageValue("Възникна технически проблем при активацията на вашия акаунт. Опитайте по-късно или се свържете с администратор.");
+      }
+    }
   };
+
+  const resendCode = async () => {
+    const data = {
+      email: inputEmail
+    };
+
+    const response = await fetch('https://api.naroden.org/public/v1/users/issue-code', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      setSuccessFormMessageValue("Успешно поискахте нов код. Моля проверете пощата си!");
+      setErrorFormMessageValue("");
+    } else {
+      setSuccessFormMessageValue("");
+      if (result.code === "4003") {
+        setErrorFormMessageValue("Не съществува акаунт с тази поща.");
+      } else {
+        setErrorFormMessageValue("Възникна технически проблем при изпращането на нов код. Опитайте по-късно или се свържете с администратор.");
+      }
+    }
+  }
 
   return (
     <section className="vh-100">
@@ -54,28 +104,39 @@ export default function activateAccount() {
                     <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Активирайте своя акаунт!</p>
 
                     <form onSubmit={onSubmit} className="mx-1 mx-md-4">
-                      <div className="d-flex flex-row align-items-center mb-4">
+                      <div className="mb-4">
+                        <label htmlFor="disabledTextInput" className="form-label">Поща</label>
                         <input
                             className="form-control"
                             placeholder="Въведете вашата поща"
                             type="text"
                             value={inputEmail}
-                            onChange={e => { setInputEmailValue(e.currentTarget.value); }}
+                            onChange={e => {
+                              setInputEmailValue(e.currentTarget.value);
+                            }}
                         />
 
                       </div>
-                      <div className="d-flex flex-row align-items-center mb-4">
+                      <div className="mb-4">
+                        <label htmlFor="disabledTextInput" className="form-label">Код</label>
                         <input
                             className="form-control"
                             placeholder="Въведете вашия код"
                             type="text"
                             value={inputCode}
-                            onChange={e => { setInputCodeValue(e.currentTarget.value); }}
+                            onChange={e => {
+                              setInputCodeValue(e.currentTarget.value);
+                            }}
                         />
-
                       </div>
-                      <button type="submit" className="btn btn-primary">Активирай!</button>
-
+                      <div className="mb-4">
+                        <button name="activate-account" className="btn btn-primary">Активирай</button>
+                        <button name="resend-rode" onClick={resendCode} className="btn btn-primary float-end">Изпрати нов код</button>
+                      </div>
+                      <div className="mb-4">
+                        <div className="form-text text-success fw-bold">{successFormMessage}</div>
+                        <div className="form-text text-danger fw-bold">{errorFormMessage}</div>
+                      </div>
                     </form>
 
                   </div>
