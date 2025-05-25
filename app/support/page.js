@@ -30,23 +30,16 @@ export default function Unregister() {
 
                     <form onSubmit={onSubmit} className="mx-1 mx-md-4">
                       <div className="d-flex flex-row align-items-center mb-4">
-                        <i className="fas fa-user fa-lg me-3 fa-fw"></i>
+                        <i className="fas fa-lock fa-lg me-3 fa-fw"></i>
                         <div data-mdb-input-init className="form-outline flex-fill mb-0">
-                          <label className="form-label">Телефон: +359883324570</label>
+                          <label className="form-label"><b>Поща:</b> support@naroden.org</label>
                         </div>
                       </div>
 
                       <div className="d-flex flex-row align-items-center mb-4">
                         <i className="fas fa-lock fa-lg me-3 fa-fw"></i>
                         <div data-mdb-input-init className="form-outline flex-fill mb-0">
-                          <label className="form-label">Поща: support@naroden.org</label>
-                        </div>
-                      </div>
-
-                      <div className="d-flex flex-row align-items-center mb-4">
-                        <i className="fas fa-lock fa-lg me-3 fa-fw"></i>
-                        <div data-mdb-input-init className="form-outline flex-fill mb-0">
-                          <label className="form-label">Адрес: Плевен, жк Дружба 257</label>
+                          <label className="form-label"><b>Адрес:</b> България, гр. София, р-н Лозенец, Гребен планина, 8</label>
                         </div>
                       </div>
 

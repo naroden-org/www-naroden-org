@@ -26,10 +26,9 @@ export default function Home() {
 				    <h2 className="site-headline font-weight-bold mt-lg-5 pt-lg-5">Включете се в мрежата на народа!</h2>
 				    <div className="site-tagline mb-3">Споделяне на добрите новини! Осветляване на проблемите на народа! Ела при нас!</div>
 				    <div className="cta-btns">
-					    <div className="mb-4"><a className="btn btn-primary font-weight-bold theme-btn" href="/register">Регистрирай се</a></div>
 					    <ul className="app-stores list-unstyled list-inline mx-auto mx-md-0 d-inline-block">
-						    <li className="list-inline-item me-3"><a href="/TODO-apple"><img className="ios" src="/assets/images/appstore-apple.svg" alt="app-store"/></a></li>
-						    <li className="list-inline-item"><a href="/TODO-android"><img className="android" src="/assets/images/appstore-android.svg" alt="google play"/></a></li>
+						    <li className="list-inline-item me-3"><a href="https://apps.apple.com/us/app/naroden/id6730121090?platform=iphone"><img className="ios" src="/assets/images/appstore-apple.svg" alt="app-store"/></a></li>
+						    <li className="list-inline-item"><a href="https://play.google.com/store/apps/details?id=org.naroden.mobile"><img className="android" src="/assets/images/appstore-android.svg" alt="google play"/></a></li>
 					    </ul>
 				    </div>
 			    </div>
@@ -125,7 +124,6 @@ export default function Home() {
 							    <h5 className="card-title">Новини</h5>
 							</div>
 							<p className="card-text">Приложението комбинира различни източници на новини. Нашата основна цел е да споделим добрите новини! </p>
-							<a className="more-link" href="#" >Научи повече <span className="more-arrow">&rarr;</span></a>
 						</div>
 				    </div>
 
@@ -136,7 +134,6 @@ export default function Home() {
 							    <h5 className="card-title">Интереси</h5>
 							</div>
 							<p className="card-text">Всеки потребител ще може да дефинира своите интереси. По този начин приложението ще подбере подходящите новини за всеки!</p>
-							<a className="more-link" href="#" >Научи повече <span className="more-arrow">&rarr;</span></a>
 						</div>
 				    </div>
 				    <div className="card rounded border-0 shadow-lg">
@@ -146,7 +143,6 @@ export default function Home() {
 							    <h5 className="card-title">Анкети</h5>
 							</div>
 							<p className="card-text">Създаването на гражданско общество изисква и допитването до него! Чрез анкетите гласът на народа ще бъде чут!</p>
-							<a className="more-link" href="#" >Научи повече <span className="more-arrow">&rarr;</span></a>
 						</div>
 				    </div>
 			    </div>
@@ -164,7 +160,6 @@ export default function Home() {
 							  <h5 className="card-title">Статистика</h5>
 							</div>
 							<p className="card-text">Чрез създаването на различни статистики ще покажем на хората, че не са сами! </p>
-							<a className="more-link" href="#" >Научи повече <span className="more-arrow">&rarr;</span></a>
 						</div>
 				    </div>
 
@@ -175,7 +170,6 @@ export default function Home() {
 							    <h5 className="card-title">Очаквайте още</h5>
 							</div>
 							<p className="card-text">Това е първоначална версия на приложението. Очаквайте още много неща!</p>
-							<a className="more-link" href="#" >Научи повече <span className="more-arrow">&rarr;</span></a>
 						</div>
 				    </div>
 			    </div>
@@ -191,8 +185,8 @@ export default function Home() {
 			    <h3 className="mb-3">Свали приложението</h3>
 		    <div className="section-intro mb-4 single-col-max-width mx-auto">Включи се в народната мрежа! Първото по рода си приложение в България, което цели да свърже обикновените хора! Заедно сме сила!</div>
 			    <ul className="app-stores list-unstyled list-inline mx-auto  d-inline-block">
-				    <li className="list-inline-item me-3"><a href="#"><img className="ios" src="/assets/images/appstore-apple.svg" alt="app-store" /></a></li>
-				    <li className="list-inline-item"><a href="#"><img className="android" src="/assets/images/appstore-android.svg" alt="google play" /></a></li>
+				    <li className="list-inline-item me-3"><a href="https://play.google.com/store/apps/details?id=org.naroden.mobile&hl=en"><img className="ios" src="/assets/images/appstore-apple.svg" alt="app-store" /></a></li>
+				    <li className="list-inline-item"><a href="https://apps.apple.com/us/app/naroden/id6730121090?platform=iphone"><img className="android" src="/assets/images/appstore-android.svg" alt="google play" /></a></li>
 			    </ul>
 		    </div>
 	    </div>
