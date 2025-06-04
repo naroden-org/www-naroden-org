@@ -185,8 +185,8 @@ export default function Home() {
 			    <h3 className="mb-3">Свали приложението</h3>
 		    <div className="section-intro mb-4 single-col-max-width mx-auto">Включи се в народната мрежа! Първото по рода си приложение в България, което цели да свърже обикновените хора! Заедно сме сила!</div>
 			    <ul className="app-stores list-unstyled list-inline mx-auto  d-inline-block">
-				    <li className="list-inline-item me-3"><a href="https://play.google.com/store/apps/details?id=org.naroden.mobile&hl=en"><img className="ios" src="/assets/images/appstore-apple.svg" alt="app-store" /></a></li>
-				    <li className="list-inline-item"><a href="https://apps.apple.com/us/app/naroden/id6730121090?platform=iphone"><img className="android" src="/assets/images/appstore-android.svg" alt="google play" /></a></li>
+				    <li className="list-inline-item me-3"><a href="https://apps.apple.com/us/app/naroden/id6730121090?platform=iphone"><img className="ios" src="/assets/images/appstore-apple.svg" alt="app-store" /></a></li>
+				    <li className="list-inline-item"><a href="https://play.google.com/store/apps/details?id=org.naroden.mobile&hl=en"><img className="android" src="/assets/images/appstore-android.svg" alt="google play" /></a></li>
 			    </ul>
 		    </div>
 	    </div>
